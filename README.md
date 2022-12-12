@@ -1,9 +1,7 @@
 pat
 ===
 
-Improved std http.ServeMux. It supports [pat-like](http://www.godoc.org/github.com/bmizerany/pat) patterns but longer patterns take precedence over shorter ones.
-
-Previously located at https://github.com/toqueteos/web/pat.
+Improved std http.ServeMux. It supports [pat-like](https://pkg.go.dev/github.com/bmizerany/pat) patterns but longer patterns take precedence over shorter ones.
 
 Usage
 =====
@@ -35,4 +33,4 @@ func main() {
 
 Patterns will match routes the same exact way as the std http.ServeMux does, but params will only catch text until the next slash.
 
-Check out [pat_test.go](https://github.com/toqueteos/web/blob/master/pat/pat_test.go) for all possible combinations.
+Check out [pat_test.go](https://github.com/toqueteos/pat/blob/master/pat_test.go) for all possible combinations.
